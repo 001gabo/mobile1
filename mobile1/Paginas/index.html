@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <title>Inicio</title>
+        <link rel="stylesheet" href="../css/estilo.css">
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />      
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    </head>
+    <body>
+        <script type="text/javascript" src="../js/app.js"></script>
+        <!--Pagina 1-->
+        <div data-role="page" id="page1">
+            
+            <!--Cabecera-->
+            
+            <div data-role="header" data-theme="b">
+            <p>E-Computer</p>
+            </div>
+            
+            <!--Contenido-->
+            
+            <div data-role="main" class="ui-content">
+                <p><a href="#page2" data-role="button" data-theme="a" data-transition="slide" rel="external" class="ui-btn ui-icon-arrow-r ui-btn-icon-right" id="compus">Computadoras</a></p>
+                <p><a href="#page3" data-role="button" data-theme="a" data-transition="slide" rel="external" class="ui-btn ui-icon-arrow-r ui-btn-icon-right" id="accesorios">Accesorios</a></p>
+                <p><a href="#page4" data-role="button" data-theme="a" data-transition="slide" rel="external" class="ui-btn ui-icon-arrow-r ui-btn-icon-right" id="memorias">Memorias</a></p>
+                <p><a href="#page5" data-role="button" data-theme="a" data-transition="slide" rel="external" class="ui-btn ui-icon-arrow-r ui-btn-icon-right" id="programas">Programas</a></p>
+            </div>
+            
+            <!--Pie de pagina-->
+            
+            <div data-role="footer" data-theme="a" data-position="fixed">
+            <p>Ing. de la Web 2016</p>
+            </div>
+            
+        </div>
+        
+        <div data-role="page" id="page2" data-theme="b">
+                <div data-role="header">
+                    <p>Computadoras</p>
+                </div>
+                <div data-role="main">
+                    <div id="resultado-compus">
+                    </div>
+                </div>
+                <div data-role="footer" data-position="fixed">
+                     <a data-rel="back" data-transition="slide" class="ui-btn ui-icon-arrow-l ui-btn-icon-left" data-inline="true" data-mini="true">Regresar</a>
+                </div>
+            
+            </div>
+        
+        <div data-role="page" id="page3" data-theme="b">
+                <div data-role="header">
+                    <p>Accesorios</p>
+                </div>
+                <div data-role="main">
+                    <div id="resultado-accesorios"></div>
+                </div>
+                <div data-role="footer" data-position="fixed">
+                     <a data-rel="back" data-transition="slide" class="ui-btn ui-icon-arrow-l ui-btn-icon-left" data-inline="true" data-mini="true">Regresar</a>
+                </div>
+            
+            </div>
+        
+         <div data-role="page" id="page4" data-theme="b">
+                <div data-role="header">
+                    <p>USB</p>
+                </div>
+                <div data-role="main">
+                    <div id="resultado-usb"></div>
+                </div>
+                <div data-role="footer" data-position="fixed">
+                     <a data-rel="back" data-transition="slide" class="ui-btn ui-icon-arrow-l ui-btn-icon-left" data-inline="true" data-mini="true">Regresar</a>
+                </div>
+            
+            </div>
+        
+        <div data-role="page" id="page5" data-theme="b">
+                <div data-role="header">
+                    <p>Programas</p>
+                </div>
+                <div data-role="main">
+                    <div id="resultado-programas"></div>
+                </div>
+                <div data-role="footer" data-position="fixed">
+                     <a data-rel="back" data-transition="slide" class="ui-btn ui-icon-arrow-l ui-btn-icon-left" data-inline="true" data-mini="true">Regresar</a>
+                </div>
+            
+            </div>
+    </body>
+</html>
