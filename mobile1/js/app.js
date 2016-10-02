@@ -1,6 +1,7 @@
 $(document).ready(function(){
- 
+ 	
     $("#accesorios").on('click', function(){
+		$('#resultado-accesorios').empty();
 		$.getJSON("http://pymesv.com/cliente02w/API/categorias/?categoria=1")
 		.done(function(datos_del_ws){
 			$.each(datos_del_ws ,function(indice, valor){
@@ -14,6 +15,7 @@ $(document).ready(function(){
     
     
 	$("#compus").on('click', function(){
+		$('#resultado-compus').empty();
 		$.getJSON("http://pymesv.com/cliente02w/API/categorias/?categoria=2")
 		.done(function(datos_del_ws){
 			$.each(datos_del_ws ,function(indice, valor){
@@ -26,6 +28,7 @@ $(document).ready(function(){
 	});
 
     $("#memorias").on('click', function(){
+		$('#resultado-usb').empty();
 		$.getJSON("http://pymesv.com/cliente02w/API/categorias/?categoria=3")
 		.done(function(datos_del_ws){
 			$.each(datos_del_ws ,function(indice, valor){
@@ -37,6 +40,7 @@ $(document).ready(function(){
 	}); 
     
     $("#programas").on('click', function(){
+		$('#resultado-programas').empty();
 		$.getJSON("http://pymesv.com/cliente02w/API/categorias/?categoria=4")
 		.done(function(datos_del_ws){
 			$.each(datos_del_ws ,function(indice, valor){
